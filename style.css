@@ -1,13 +1,55 @@
-header {
-    display: flex;
-    background-color: aqua;
-
-    justify-content: space-between;
-    padding: 40px;
+* {
+    margin: 0;
+    list-style: none;
+    font-family: poppins;
 }
 
-nav {
+body {
 
+}
+
+header {
+    display: flex;
+    background-color: #fff;
+    padding: 20px;
+    justify-content: space-between;
+
+
+}
+
+ul {
+    display: flex;
+    gap: 25px;
+    font-size: 18x;
+    margin-top: 10px;
+
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.container {
+    text-align: center;
+}
+
+.title {
+    margin-top: 40px;
+text-align: center;
+align-items: center;
+margin-left: 0%;
+
+}
+
+.title p {
+    width: 50%;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: normal;
 }
 
 
