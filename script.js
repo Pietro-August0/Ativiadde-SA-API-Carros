@@ -10,7 +10,7 @@ function buscarMoto() {
                 //Criando card
                 let card = document.createElement("div")
 
-                card.innerHTML =
+                card.innerHTML = `
 
                     <div>
                         <img src="${carro.imagem}" />
@@ -18,7 +18,9 @@ function buscarMoto() {
                             <h5>${carro.nome}</h5>
                             <h5>${carro.preco}</h5>
                         </div>
+                        <button>Comprar</button>
                     </div>
+                    `
 
                 divContainerCarro.append(card)
             });
@@ -37,7 +39,7 @@ function buscarCarro() {
                 //Criando card
                 let card = document.createElement("div")
 
-                card.innerHTML =
+                card.innerHTML =`
 
                     <div>
                         <img src="${moto.imagem}" />
@@ -45,9 +47,11 @@ function buscarCarro() {
                             <h5>${moto.nome}</h5>
                             <h5>${moto.preco}</h5>
                         </div>
+                        <button>Comprar</button>
                     </div>
+                    `
 
-                divContainerCarro.append(card)
+                divContainerMoto.append(card)
             });
         })
 }
@@ -64,13 +68,18 @@ function buscarVendedores() {
                 //Criando card
                 let card = document.createElement("div")
 
-                card.innerHTML =
+                card.innerHTML = `
                     <div>
                         <img src="${vendedor.imagem}" />
                         <h5>${vendedor.nome}</h5>
                     </div>
+                    `
 
                 divContainerVendedor.append(card)
             });
         })
-}
+};
+
+buscarCarro();
+buscarMoto();
+buscarVendedores();

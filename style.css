@@ -53,3 +53,37 @@ h2 {
 }
 
 
+strong {
+    font-size: 30px;
+}
+
+
+
+.containerCarros,
+.containerMotos,
+.containerVendedores {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+
+    & div img {
+        height: 300px;
+        width: 280px;
+    }
+
+    & div {
+       padding: 3px;
+        border-radius: 10px;
+        background-color: rgb(229, 229, 229);
+        justify-content: space-between;
+    }
+}
+
+button {
+    border: none;
+    background-color: #fff;
+    color: black;
+    font-weight: 600;
+    padding: 10px 110px;
+    border-radius: 6px;
+}
